@@ -1,49 +1,23 @@
-<html lang="pt-BR">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Nossa Equipe | JJ3 Tech</title>
-	</head>
-	<body>
-		<header>
-			<strong>JJ# Tech</strong>
-			<nav>
-				<ul>
-					<li><a href="/">Início</a></li>
-					<li><a href="/sobre">Sobre</a></li>
-					<li><a href="/equipe">Equipe</a></li>
-					<li><a href="/contato">Contato</a></li>
-				</ul>
-			</nav>
-		</header>
+---
+import LayoutBase from '../layouts/LayoutBase.astro';
+import { empresa } from '../data/empresa.js';
+---
 
-		<main>
-			<section>
-				<h1>Nossa Equipe Técnica</h1>
-				<p>Conheça os profissionais que transformam requisitos de negócio em soluções de software seguras e escaláveis</p>
-				<ul>
-					<li>
-						<h2>Jairo Ribeiro</h2>
-						<strong>CEO e Programador backend</strong>
-						<p>Fundador e responsável pela liderança estratégica da JJ3 Tech e pelo desenvolvimento backend dos sistemas. Atua na criação de soluções tecnológicas, garantindo eficiência, segurança e inovação.</p>
-					</li>
-					<li>
-						<h2>Jádylla Lima</h2>
-						<strong>Programadora frontend e Marketing</strong>
-						<p>Responsável pelo desenvolvimento das interfaces visuais e pela experiência dos usuários. Também atua nas estratégias de marketing, contribuindo para fortalecer a identidade e a presença digital.</p>
-					</li>
-					<li>
-						<h2>Luiza Souza</h2>
-						<strong>Programadora frontend</strong>
-						<p>Responsável pelo desenvolvimento de interfaces modernas e intuitivas, transformando ideias em experiências digitais funcionais e agradáveis. Contribui para a qualidade visual e a usabilidade dos projetos.</p>
-					</li>
-				</ul>
-			</section>
-		</main>
-
-		<footer>
-			<p>&copy; 2026 JJ3 Tech. Todos os direitos reservados.</p>
-		</footer>
-	</body>
-</html>
+<LayoutBase 
+	titulo="Nossa Equipe" 
+	descricao={`Conheça os profissionais por trás da ${empresa.nome}.`}
+>
+	<section>
+		<h1>Nossa Equipe Técnica</h1>
+		<p>Conheça os profissionais que transformam requisitos de negócio em soluções de software seguras e escaláveis</p>
+		<ul>
+			{empresa.equipe.map((membro) => (
+				<li>
+					<h2>{membro.nome}</h2>
+					<strong>{membro.cargo}</strong>
+					<p>{membro.descricao}</p>
+				</li>
+			))}
+		</ul>
+	</section>
+</LayoutBase>

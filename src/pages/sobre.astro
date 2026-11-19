@@ -1,64 +1,36 @@
-<html lang="pt-BR">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sobre Nós | JJ3 Tech</title>
-	</head>
-	<body>
-		<header>
-			<strong>JJ3 Tech</strong>
-			<nav>
-				<ul>
-					<li><a href="/">Início</a></li>
-					<li><a href="/sobre">Sobre</a></li>
-					<li><a href="/equipe">Equipe</a></li>
-					<li><a href="/contato">Contato</a></li>
-				</ul>
-			</nav>
-		</header>
+---
+import LayoutBase from '../layouts/LayoutBase.astro';
+import { empresa } from '../data/empresa.js';
+---
 
-		<main>
-			<section>
-				<h1>Sobre a JJ3 Tech</h1>
-				<p>A JJ 3 Tech nasceu em 2025, fruto da união entre duas gerações e de um sonho construído em família. O nome da empresa é uma homenagem direta às pessoas que deram origem a tudo isso: Jairo, meu pai, e Jádylla, eu — as duas letras "J" que carregam a essência da nossa história, unidas ao "3" que representa o seu número da sorte, o futuro e a inovação que queremos construir. Criada no ano passado, a empresa surgiu da vontade de transformar ideias em soluções tecnológicas reais, unindo a experiência e os valores de uma geração com a energia e o conhecimento técnico da outra. Desde o primeiro projeto, carregamos conosco o nome da nossa família e o compromisso de oferecer tecnologia com confiança, proximidade e qualidade — valores que estão em cada linha de código que escrevemos.</p>
-			</section>
+<LayoutBase 
+	titulo="Sobre Nós" 
+	descricao={`Conheça a história e os valores da ${empresa.nome}.`}
+>
+	<section>
+		<h1>Sobre a {empresa.nome}</h1>
+		<p>{empresa.historia}</p>
+	</section>
 
-			<section>
-				<h2>Missão</h2>
-				<p>Desenvolver soluções de software personalizadas, acessíveis e de alta qualidade, ajudando empresas e empreendedores a crescerem por meio da tecnologia, sempre com atendimento próximo, humano e transparente.</p>
-			</section>
+	<section>
+		<h2>Missão</h2>
+		<p>{empresa.missao}</p>
+	</section>
 
-			<section>
-				<h2>Visão</h2>
-				<p>Ser reconhecida, até 2030, como uma das principais software houses de referência regional, sendo lembrada não apenas pela excelência técnica, mas pelo cuidado genuíno com cada cliente e cada projeto entregue.</p>
-			</section>
+	<section>
+		<h2>Visão</h2>
+		<p>{empresa.visao}</p>
+	</section>
 
-			<section>
-				<h2>Nossos Valores</h2>
-				<ul>
-					<li>
-						<h3>Excelência Técnica</h3>
-						<p>Código limpo, testado e feito para durar.</p>
-					</li>
-					<li>
-						<h3>Transparência</h3>
-						<p>Prazos, custos e desafios comunicados com clareza.</p>
-					</li>
-					<li>
-						<h3>Inovação com Propósito</h3>
-						<p>Tecnologia que resolve problemas reais.</p>
-					</li>
-                    <li>
-						<h3>Compromisso com Resultado</h3>
-						<p>O sucesso do cliente é a medida do nosso trabalho.</p>
-					</li>
-				</ul>
-			</section>
-		</main>
-
-		<footer>
-			<p>&copy; 2026 JJ3 Tech. Todos os direitos reservados.</p>
-		</footer>
-	</body>
-</html>
+	<section>
+		<h2>Nossos Valores</h2>
+		<ul>
+			{empresa.valores.map((valor) => (
+				<li>
+					<h3>{valor.titulo}</h3>
+					<p>{valor.descricao}</p>
+				</li>
+			))}
+		</ul>
+	</section>
+</LayoutBase>
