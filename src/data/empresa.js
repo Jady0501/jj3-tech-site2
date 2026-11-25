@@ -58,6 +58,13 @@ export const empresa = {
       foto: "/images/luiza.png",
       alt: "Foto de Luiza Souza",
       descricao: "Responsável por desenvolver interfaces modernas e intuitivas, garantindo qualidade visual, funcionalidade e boa experiência aos usuários."
+    },
+    {
+      nome: "Maria Oliveira",
+      cargo: "Programadora backend",
+      foto: "/images/maria.png",
+      alt: "Foto de Maria Oliveira",
+      descricao: "Responsável pelo desenvolvimento backend dos sistemas, criando funcionalidades, gerenciando bancos de dados e garantindo segurança, desempenho e eficiência das aplicações."
     }
   ]
 };
