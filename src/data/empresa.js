@@ -41,23 +41,23 @@ export const empresa = {
     {
       nome: "Jairo Ribeiro",
       cargo: "CEO e Programador backend",
-      foto: "/images/jairo.jpg",
+      foto: "/images/jairo.png",
       alt: "Foto de Jairo Ribeiro",
-      descricao: "Fundador e responsável pela liderança estratégica da JJ3 Tech e pelo desenvolvimento backend dos sistemas. Atua na criação de soluções tecnológicas, garantindo eficiência, segurança e inovação."
+      descricao: "Fundador e líder estratégico da JJ3 Tech, responsável pelo desenvolvimento backend e pela criação de soluções tecnológicas eficientes, seguras e inovadoras."
     },
     {
       nome: "Jádylla Lima",
       cargo: "Programadora frontend e Marketing",
-      foto: "/images/jadylla.jpg",
+      foto: "/images/jadylla.png",
       alt: "Foto de Jádylla Lima",
-      descricao: "Responsável pelo desenvolvimento das interfaces visuais e pela experiência dos usuários. Também atua nas estratégias de marketing, contribuindo para fortalecer a identidade e a presença digital."
+      descricao: "Responsável pelo desenvolvimento das interfaces e experiência dos usuários, além das estratégias de marketing e fortalecimento da presença digital da empresa."
     },
     {
       nome: "Luiza Souza",
       cargo: "Programadora frontend",
-      foto: "/images/luiza.jpg",
+      foto: "/images/luiza.png",
       alt: "Foto de Luiza Souza",
-      descricao: "Responsável pelo desenvolvimento de interfaces modernas e intuitivas, transformando ideias em experiências digitais funcionais e agradáveis. Contribui para a qualidade visual e a usabilidade dos projetos."
+      descricao: "Responsável por desenvolver interfaces modernas e intuitivas, garantindo qualidade visual, funcionalidade e boa experiência aos usuários."
     }
   ]
 };
