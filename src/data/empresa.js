@@ -28,6 +28,7 @@ export const empresa = {
   publicoAlvo:
     "Pequenas e médias empresas (PMEs) em processo de digitalização, empreendedores e startups que precisam de MVP ou sistemas sob medida, profissionais autônomos que buscam presença digital (sites, apps, sistemas de gestão).",
   contato: {
+    fachada: "/workspaces/jj3-tech-site2/public/images/fachadaJJ3Tech.png",
     email: "contato@jj3tech.com.br",
     telefone: "(86) 99999-999",
     endereco: {

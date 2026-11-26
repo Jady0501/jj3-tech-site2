@@ -2,13 +2,26 @@
 import LayoutBase from '../layouts/LayoutBase.astro';
 import Cartao from '../components/Cartao.astro';
 import { empresa } from '../data/empresa.js';
+import { Image } from 'astro:assets';
+import foto from '/workspaces/jj3-tech-site2/public/images/fachadaJJ3Tech.png';
 ---
 
 <LayoutBase 
 	titulo="Fale Conosco" 
 	descricao={`Entre em contato com a ${empresa.nome}.`}
 >
-	<section class="secao">
+<Image src={foto} alt="Descrição da imagem",
+	width={1080}
+	height={720} 
+	class="imagem-centralizada"
+	/>
+	<style>
+  		.imagem-centralizada {
+    	display: block;
+    	margin: 0 auto;
+  }
+</style>
+<section class="secao">
 		<div class="container">
 			<div class="cabecalho-secao">
 				<h1>Fale Conosco</h1>
