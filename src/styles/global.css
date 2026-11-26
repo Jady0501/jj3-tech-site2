@@ -1,9 +1,9 @@
 /* src/styles/global.css */
 :root {
   /* Paleta de Cores - JJ3 Tech | Dark Theme */
-  --cor-primaria: #e44c0f; /* Branco */
+  --cor-primaria: #e44c0f;
   --cor-secundaria: #e44c0f; /* Laranja principal */
-  --cor-destaque: #5f2300; /* Laranja claro */
+  --cor-destaque: #531a03; /* Laranja claro */
   --cor-fundo: #000000; /* Preto */
   --cor-fundo-alt: #000000; /* Grafite */
   --cor-texto: #e5e5e5; /* Cinza claro */
@@ -23,8 +23,8 @@
   );
 
   --degrade-hero: linear-gradient(
-    100deg,
-    #bb3e0c,
+    200deg,
+    #ff4800,
     var(--cor-hero-fim)
   );
 
