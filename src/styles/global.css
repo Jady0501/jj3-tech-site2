@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap');
 /* src/styles/global.css */
 :root {
   /* Paleta de Cores - JJ3 Tech | Dark Theme */
+<<<<<<< HEAD
   --cor-primaria: #e44c0f;
   --cor-secundaria: #e44c0f; /* Laranja principal */
   --cor-destaque: #531a03; /* Laranja claro */
   --cor-fundo: #000000; /* Preto */
   --cor-fundo-alt: #000000; /* Grafite */
+=======
+  --cor-primaria: #e44c0f; /* Branco */
+  --cor-secundaria: #ff7a00; /* Laranja principal */
+  --cor-destaque: #5f2300; /* Laranja claro */
+  --cor-fundo: #000000; /* Preto */
+  --cor-fundo-alt: #161616; /* Grafite */
+>>>>>>> refs/remotes/origin/main
   --cor-texto: #e5e5e5; /* Cinza claro */
   --cor-texto-secundario: #e0e0e0;
   --cor-texto-invertido: #ffffff;
@@ -23,8 +32,13 @@
   );
 
   --degrade-hero: linear-gradient(
+<<<<<<< HEAD
     200deg,
     #ff4800,
+=======
+    300deg,
+    #000000,
+>>>>>>> refs/remotes/origin/main
     var(--cor-hero-fim)
   );
 
